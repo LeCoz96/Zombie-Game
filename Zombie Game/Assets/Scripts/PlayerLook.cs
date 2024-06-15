@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class PlayerLook : MonoBehaviour
 {
-    public Camera cam;
+    [SerializeField] private Camera _camera;
 
     private float _xRotation;
 
-    public float xSesitivity = 30f;
-    public float ySesitivity = 30f;
+    [SerializeField] private float xSesitivity;
+    [SerializeField] private float ySesitivity;
+
+    [SerializeField] private float _cameraMin;
+    [SerializeField] private float _cameraMax;
 
     public void ProcessLook(Vector2 input)
     {
@@ -18,9 +21,9 @@ public class PlayerLook : MonoBehaviour
         float mouseY = input.y;
 
         _xRotation -= (mouseY * Time.deltaTime) * ySesitivity;
-        _xRotation = Mathf.Clamp(_xRotation, -80f, 80f);
+        _xRotation = Mathf.Clamp(_xRotation, _cameraMin, _cameraMax);
 
-        cam.transform.localRotation = Quaternion.Euler(_xRotation, 0, 0);
+        _camera.transform.localRotation = Quaternion.Euler(_xRotation, 0, 0);
         transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSesitivity);
     }
 }

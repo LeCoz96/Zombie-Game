@@ -6,11 +6,11 @@ public class PlayerMotor : MonoBehaviour
 {
     private CharacterController _controller;
     private Vector3 _playerVelocity;
-    public float _speed = 5f;
+    [SerializeField] private float _speed;
 
     private bool _isGrounded;
-    public float _gravity = -9.8f;
-    public float _jumpHeight = 3f;
+    private float _gravity = -9.8f;
+    [SerializeField] private float _jumpHeight;
 
     void Start()
     {
