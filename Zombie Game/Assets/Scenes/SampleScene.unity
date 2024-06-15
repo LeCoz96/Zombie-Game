@@ -321,6 +321,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4648964196424322885, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
+      propertyPath: _jumpHeight
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7792769007221491354, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -367,7 +371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8213818392050236423, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
       propertyPath: m_Name
-      value: Capsule
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
