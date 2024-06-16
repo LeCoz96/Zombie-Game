@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : ScriptableObject
+public abstract class Interactable : MonoBehaviour
 {
-    public string prompt;
+    public string Message;
 
     public void BaseInteract()
     {
@@ -12,5 +12,4 @@ public class Interactable : ScriptableObject
     }
 
     protected virtual void Interact() { }
-
 }

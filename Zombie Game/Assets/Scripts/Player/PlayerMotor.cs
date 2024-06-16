@@ -52,8 +52,6 @@ public class PlayerMotor : MonoBehaviour
                 _crouchTimer = 0.0f;
             }
         }
-
-        Debug.Log(_speed);
     }
 
     public void ProcessMove(Vector2 input)
@@ -69,7 +67,6 @@ public class PlayerMotor : MonoBehaviour
             _playerVelocity.y = -2.0f;
         }
         _controller.Move(_playerVelocity * Time.deltaTime);
-        //Debug.Log(_playerVelocity.y);
     }
 
     public void Jump()
