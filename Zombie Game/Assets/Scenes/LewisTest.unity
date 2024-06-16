@@ -321,6 +321,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4648964196424322885, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
+      propertyPath: _walkSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648964196424322885, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
+      propertyPath: _crouchSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648964196424322885, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
+      propertyPath: _crouchTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648964196424322885, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
+      propertyPath: _sprintSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7792769007221491354, guid: ae521cf9d907d9b44be7c98886954d30, type: 3}
       propertyPath: m_RootOrder
       value: 2
