@@ -99,6 +99,8 @@ GameObject:
   - component: {fileID: 1992653389967127146}
   - component: {fileID: 4648964196424322885}
   - component: {fileID: 209651865503160596}
+  - component: {fileID: 6435786197624208947}
+  - component: {fileID: 6814503584546266125}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -214,8 +216,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9830c9426e1398478d1c447fbfc8494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _crouchSpeed: 2
+  _walkSpeed: 5
+  _sprintSpeed: 8
   _jumpHeight: 1.5
+  _crouchTimer: 1
 --- !u!114 &209651865503160596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,5 +236,35 @@ MonoBehaviour:
   _camera: {fileID: 8097067704395110803}
   xSesitivity: 30
   ySesitivity: 30
-  _cameraMin: -80
-  _cameraMax: 80
+  _cameraMin: 10
+  _cameraMax: 30
+--- !u!114 &6435786197624208947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213818392050236423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6294fe83252e22f42a3a81ad1db4218c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 8097067704395110803}
+  _interactionDistance: 6
+  _interactLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &6814503584546266125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213818392050236423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d27622fcf6fea4ebe44b0d68dda794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 0}
