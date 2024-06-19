@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933585c30775be24cb1278f53b262f98, type: 3}
+  m_Name: Inv_Metal
+  m_EditorClassIdentifier: 
+  id: 2
+  displayName: Metal
+  icon: {fileID: 0}
+  prefab: {fileID: 5513314310157284870, guid: f7947869cde54ab4e9093310fb7ae923, type: 3}
