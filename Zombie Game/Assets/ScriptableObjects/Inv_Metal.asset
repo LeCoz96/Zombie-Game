@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933585c30775be24cb1278f53b262f98, type: 3}
   m_Name: Inv_Metal
   m_EditorClassIdentifier: 
-  id: 2
-  displayName: Metal
-  icon: {fileID: 0}
-  prefab: {fileID: 5513314310157284870, guid: f7947869cde54ab4e9093310fb7ae923, type: 3}
+  Id: InvIcon_Metal
+  DisplayName: Metal
+  Description: 
+  Icon: {fileID: 21300000, guid: b0533671d030a2341bcad039708f7401, type: 3}
+  Prefab: {fileID: 6839547649956807287, guid: 57297574fc8c1d94babe11dcfe27c732, type: 3}
