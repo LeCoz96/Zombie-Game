@@ -33,12 +33,12 @@ public class IconScreenshot : MonoBehaviour
             obj.gameObject.SetActive(true);
             yield return null;
 
-            TakeScreenshot($"{Application.dataPath}/{PathFolder}/{data.Id}_Icons.png");
+            TakeScreenshot($"{Application.dataPath}/{PathFolder}/{data.Id}_InventoryIcon.png");
 
             yield return null;
             obj.gameObject.SetActive(false);
 
-            Sprite s = AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/{PathFolder}/{data.Id}_Icons.png");
+            Sprite s = AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/{PathFolder}/{data.Id}_InventoryIcon.png");
             if (s != null)
             {
                 data.Icon = s;
